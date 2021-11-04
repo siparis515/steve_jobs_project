@@ -51,8 +51,8 @@ body {
 	color: #01003d;
 }
 .main_table {
-	border: 5px solid #9694ff;
-	background-color: #9694ff;
+	border: 5px solid LightSteelBlue;
+	background-color: LightSteelBlue;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -168,7 +168,7 @@ input:nth-of-type(5):checked ~ main#carousel {
 	z-index: 99; 
 	border: 5px solid #01003d; 
 	outline: none;
-	background-color: #9694ff; 
+	background-color: LightSteelBlue; 
 	color: #01003d;
 	cursor: pointer;
 	padding: 15px; 
