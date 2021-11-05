@@ -17,6 +17,14 @@ body {
 	font-stretch: semi-expanded;
 	font-style: italic;
 }
+.add_quote {
+	font-family: serif;
+	font-size: 110%;
+	color: white;
+	text-align: center;
+	font-stretch: semi-expanded;
+	font-style: italic;
+}
 .main_table_cont {
 	border: 5px solid #01003d;
 	text-align: center;	
@@ -25,7 +33,6 @@ body {
 	border: 5px solid #01003d;	
 	text-align: center;
 	font-size: 100%;
-	font-weight: italic;
 	font-family: times;
 	color: #01003d;
 }
@@ -33,7 +40,6 @@ body {
 	border: 5px solid #01003d;	
 	text-align: left;
 	font-size: 100%;
-	font-weight: italic;
 	font-family: times;
 	color: #01003d;
 }
@@ -55,9 +61,6 @@ body {
 	background-color: LightSteelBlue;
 	margin-left: auto;
 	margin-right: auto;
-}
-.input_table {
-	text-align: center;
 }
 main#carousel {
 	grid-row: 1 / 2;
@@ -81,7 +84,8 @@ div.item {
 	height: 400px;
 	background-color: coral;
 	--r: calc(var(--position) - var(--offset));
-	--abs: max(calc(var(--r) * -1), var(--r));
+	--s: calc(-1 * var(--r));
+	--abs: max(var(--s), var(--r));
 	transition: all 0.25s linear;
 	transform: rotateY(calc(-10deg * var(--r)))
     translateX(calc(-300px * var(--r)));
@@ -144,6 +148,10 @@ input:nth-of-type(5) {
 input:nth-of-type(5):checked ~ main#carousel {
 	--position: 5;
 }
+input{
+	display: block;
+	margin: 0 auto;
+}
 .signature{
 	background-image: url(../images/main/signature.png);
 	background-size: 100%;
@@ -174,8 +182,55 @@ input:nth-of-type(5):checked ~ main#carousel {
 	padding: 15px; 
 	border-radius: 10px;
 	font-size: 120%;
-	font-style: bold;
 }
 #myBtn:hover {
 	background-color: #555; 
+}
+
+.sec-center {
+  position: relative;
+  max-width: 100%;
+  text-align: center;
+  z-index: 200;
+}
+[type="checkbox"]:checked,
+[type="checkbox"]:not(:checked){
+  position: absolute;
+  left: -9999px;
+}
+
+.section-dropdown {
+  position: absolute;
+  padding: 5px;
+  background-color: LightSteelBlue;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  border-radius: 4px;
+  display: block;
+  z-index: 2;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(10px);
+  transition: all 200ms linear;
+}
+.dropdown:checked ~ .section-dropdown{
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+.a1 {
+  position: relative;
+  color: #01003d;
+  font-family: times;
+  font-weight: bold;
+  text-align: center;
+  align-items: center;
+}
+.his_life_timeline	{
+    text-align: center;
+	font-size: 150%;
+	font-family: times;
+	color: #01003d;
+	text-decoration-line: underline;
 }
