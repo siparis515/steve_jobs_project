@@ -1,4 +1,9 @@
 <!DOCTYPE html>
+<!--
+// Created and developed by Pan Szymon J. Gerasimuk
+// Personal project, Gdańsk University of Technology
+// Album number 191956, 2021
+-->
 <html lang="en">
 	<head>
 		<title>Steve Jobs</title>
@@ -10,30 +15,56 @@
 		<table class="main_table">
 			<tr>
 				<th class="main_table_cont"><a href="index.html" class="text_table">Main</a></th>
-				<th class="main_table_cont"><a href="pages/childhood_college.html" class="text_table">Childhood & College</a></th>
-				<th class="main_table_cont"><a href="pages/apple_inc.html" class="text_table">Apple Inc.</a></th>
-				<th class="main_table_cont"><a href="pages/other_companies.html" class="text_table">Other companies</a></th>
-				<th class="main_table_cont"><a href="pages/family.html" class="text_table">Family</a></th>
+				<th class="main_table_cont">
+					<div class="sec-center"> 	
+						<input class="dropdown" type="checkbox" id="dropdown" name="dropdown"/>
+						<label class="for-dropdown" for="dropdown"><b class="his_life_timeline">His life timeline</b></label>
+						<div class="section-dropdown"> 
+							<table class="main_table">
+								<tr>
+									<th class="main_table_cont">
+										<a href="pages/childhood_college.html" class="text_table">Childhood & College<i class="uil uil-arrow-right"></i></a>
+									</th>
+								</tr>
+								<tr>
+									<th class="main_table_cont">
+										<a href="pages/apple_inc.html" class="text_table">Apple Inc.<i class="uil uil-arrow-right"></i></a>
+									</th>
+								</tr>
+								<tr>
+									<th class="main_table_cont">
+										<a href="pages/other_companies.html" class="text_table">Other companies<i class="uil uil-arrow-right"></i></a>
+									</th>
+								</tr>
+								<tr>
+									<th class="main_table_cont">
+										<a href="pages/family.html" class="text_table">Family<i class="uil uil-arrow-right"></i></a>
+									</th>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</th>
 				<th class="main_table_cont"><a href="pages/quotes.html" class="text_table">Quotes</a></th>
 				<th class="main_table_cont"><a href="pages/gallery.html" class="text_table">Gallery</a></th>
 				<th class="main_table_cont"><a href="pages/about.html" class="text_table">About</a></th>
 			</tr>
 		</table>
+		<h1 class="add_quote">My hobby is studying interesting facts, a part of my hobby is studying the biographies of famous people. Therefore, this site is about a person whose life I studied, without whom our life would not be what it is now.</h1>
 		<h1 class="steve_jobs">Steve Jobs</h1>
 		<h1 class="main_quote">Steven Paul Jobs was one of the few people who had radically changed the world.</h1>
-		<h1 class="input_table">
-			<input type="radio" name="position" />
-			<input type="radio" name="position" />
-			<input type="radio" name="position" checked />
-			<input type="radio" name="position" />
-			<input type="radio" name="position" />
-			<main id="carousel">
-				<div class="item"></div>
-				<div class="item"></div>
-				<div class="item"></div>
-				<div class="item"></div>
-				<div class="item"></div>
-			</main></h1>
+		<input type="radio" name="position" />
+		<input type="radio" name="position" />
+		<input type="radio" name="position" checked />
+		<input type="radio" name="position" />
+		<input type="radio" name="position" />
+		<main id="carousel">
+			<div class="item"></div>
+			<div class="item"></div>
+			<div class="item"></div>
+			<div class="item"></div>
+			<div class="item"></div>
+		</main>
 		<table class="main_table">
 			<tr>
 				<th class="main_table_cont1">Born</th>
@@ -75,6 +106,10 @@
 					<br>Apple Inc.</em></th>
 				<th class="main_table_cont1">Signature</th>
 				<th class="signature"></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
 			</tr>
 		</table>
 		<br>
@@ -86,7 +121,9 @@
 		<br>
 		<p class="p1">Jobs became CEO of Apple in 1997, following his company's acquisition of NeXT. He was largely responsible for helping revive Apple, which had been on the verge of bankruptcy. He worked closely with designer Jony Ive to develop a line of products that had larger cultural ramifications, beginning in 1997 with the "Think different" advertising campaign and leading to the iMac, iTunes, iTunes Store, Apple Store, iPod, iPhone, App Store, and the iPad. In 2001, the original Mac OS was replaced with the completely new Mac OS X (now known as macOS), based on NeXT's NeXTSTEP platform, giving the OS a modern Unix-based foundation for the first time. Jobs was diagnosed with a pancreatic neuroendocrine tumor in 2003. He died of respiratory arrest related to the tumor at age 56 on October 5, 2011.</p>
 		<br>
-		<a href="pages/about.html" class="about" target="_blank"><b>All information about the creator of the site and about the materials used is in the window "About".</b></a>
+		<footer>
+			<a href="pages/about.html" class="about" target="_blank"><b>All information about the creator of the site and about the materials used is in the window "About".</b></a>
+		</footer>
 		<script>
 			mybutton = document.getElementById("myBtn");
 			window.onscroll = function() {scrollFunction()};
