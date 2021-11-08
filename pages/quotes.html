@@ -110,20 +110,6 @@
 		<footer>
 			<a href="../pages/about.html" class="about" target="_blank"><b>All information about the creator of the site and about the materials used is in the window "About".</b></a>
 		</footer>
-		<script>
-			mybutton = document.getElementById("myBtn");
-			window.onscroll = function() {scrollFunction()};
-			function scrollFunction() {
-				if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-					mybutton.style.display = "block";
-				} else {
-					mybutton.style.display = "none";
-				}
-			}
-			function topFunction() {
-				document.body.scrollTop = 0; 
-				document.documentElement.scrollTop = 0; 
-			}
-	</script>
+		<script src="../js/button.js"></script>
 	</body>
 </html>
