@@ -150,6 +150,10 @@ img:nth-child(5) {
     pointer-events: auto;
     transform: translateY(0);
 }
+.dropdown:not(:checked) ~ .section-dropdown{
+    z-index: 1;
+	display: none;
+}
 .a1 {
     position: relative;
     color: #01003d;
