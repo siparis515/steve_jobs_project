@@ -24,7 +24,7 @@ q {
 }
 .text_table {
 	text-align: center;
-	font-size: 150%;
+	font-size: 100%;
 	font-weight: bold;
 	font-family: times;
 	color: #01003d;
@@ -115,7 +115,7 @@ h2	{
 }
 .his_life_timeline	{
     text-align: center;
-	font-size: 150%;
+	font-size: 100%;
 	font-family: times;
 	color: #01003d;
 	text-decoration-line: underline;
